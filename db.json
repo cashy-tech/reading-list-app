@@ -1,3 +1,16 @@
 {
-  "books": []
+  "books": [
+    {
+      "title": "Outliers",
+      "id": 1
+    },
+    {
+      "title": "Atomic habits",
+      "id": 2
+    },
+    {
+      "title": "compounding effect",
+      "id": 3
+    }
+  ]
 }
