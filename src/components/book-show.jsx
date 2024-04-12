@@ -4,7 +4,7 @@ import BookEdit from "./book-edit";
 function BookShow({ book, onDelete, onEdit }) {
   const [showEdit, setShowEdit] = useState(false);
 
-  const handleClick = () => {
+  const handleDelete = () => {
     onDelete(book.id);
   };
 
@@ -23,12 +23,13 @@ function BookShow({ book, onDelete, onEdit }) {
   }
   return (
     <div className="book-show">
+      <img src={`https://picsum.photos/seed/${book.id}/300/200`} alt="books" />
       <div>{content}</div>
       <div className="actions">
         <button className="edit" onclick={handleEdit}>
           Edit
         </button>
-        <button className="delete" onClick={handleClick}>
+        <button className="delete" onClick={handleDelete}>
           Delete
         </button>
       </div>
